@@ -11,7 +11,7 @@ let catalog = [
     _id : 'gfdsnkgsdjds1',
     title: "Major's Mask",
     price: 40.50,
-    img: 'Majors-Mask.png',
+    img: 'Majoras-Mask.png',
     category: 'Collectible'
   },
   {

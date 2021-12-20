@@ -19,8 +19,8 @@ export default function Catalog() {
   return (
     <div className='catalog'>
       <h3>We have {products.length} products!</h3>
-      {products.map((product) => (
-        <Product product={product} />
+      {products.map((product, idx) => (
+        <Product product={product} key={idx} />
   ))}
     </div>
   )

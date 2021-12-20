@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function products(props) {
   return (
 
-    <div className='product' key={props.product._id}>      
-        <img src={`../public/media/Link.png`} alt={props.product.title} />
+    <div className='product' > 
+        <img src={'/media/'+props.product.img} alt={props.product.title} />
         <div className="card-details">
           <h2 className="title">{props.product.title}</h2>
           <label htmlFor="Price">Price: $ {props.product.price}</label>
