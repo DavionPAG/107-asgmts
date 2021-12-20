@@ -14,9 +14,9 @@ export default function QuantityPicker() {
     if (quantity > 1) setQuantity(quantity - 1)
   }
   return (
-    <div>
+    <div className='quantity'>
       <button onClick={clickDown}>-</button>
-      <label htmlFor="">{quantity}</label>
+      <p>{quantity}</p>
       <button onClick={clickUp}>+</button>
     </div>
   )

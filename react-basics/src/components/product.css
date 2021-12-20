@@ -1,10 +1,39 @@
 .product {
+  background-color: rgb(191, 211, 238);
   color: blue;
   border: 1px solid lightblue;
   display: inline-block;
   padding: 5px;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px lightgreen;
-  margin: 5px;
+  box-shadow: 5px 5px 5px rgb(43, 174, 235);
+  margin: 10px;
+  min-width: 300px;
+}
+
+.product label {
+  padding-bottom: 1rem;
+}
+
+.product img {
+  width: 297px;
+  height: 297px;
+}
+
+.card-add {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-add button {
+  margin: 0 5px;
+  padding: 0 20px;
+}
+
+.card-add p {
+  padding: 0 10px
+}
+
+.card-details label {
+  display: block;
 }
 
