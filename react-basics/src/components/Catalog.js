@@ -14,7 +14,7 @@ export default function Catalog() {
 
   useEffect(() => {
     loadCatalog()
-  })
+  }, [])
 
   return (
     <div className='catalog'>

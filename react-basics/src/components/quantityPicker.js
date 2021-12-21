@@ -2,16 +2,18 @@ import './quantityPicker.css'
 
 import React, {useState} from 'react'
 
-export default function QuantityPicker() {
+export default function QuantityPicker(props) {
 
   const [quantity, setQuantity] = useState(1)
 
   function clickUp() {
     if (quantity <= 19) setQuantity(quantity + 1)
+    props.quantity(quantity+1)
   }
 
   function clickDown() {
     if (quantity > 1) setQuantity(quantity - 1)
+    props.quantity(quantity-1)
   }
   return (
     <div className='quantity'>
