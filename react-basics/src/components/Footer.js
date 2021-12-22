@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div>
+    <div className='footer'>
       <p>&copy; DPG
         <a href="https://github.com/Vektur">
           <i className="fab fa-github-alt"></i>

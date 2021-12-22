@@ -17,7 +17,7 @@ const [total, setTotal] = useState(1)
         <div className="card-details">
           <h2 className="title">{props.product.title}</h2>
           <label htmlFor="Price">Price: $ {props.product.price.toFixed(2)}</label>
-          <label htmlFor='Total'>Total: {(total*props.product.price.toFixed(2))} </label>
+          <label htmlFor='Total'>Total: {(total*props.product.price).toFixed(2)} </label>
         </div>
         <div className='card-add'>
           <QuantityPicker quantity={quantity} ></QuantityPicker>
