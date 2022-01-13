@@ -1,4 +1,7 @@
-body {
-  background-color: lightslategrey;
+
+.App {
+  background-color: rgb(229, 237, 245);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

@@ -16,7 +16,7 @@ let catalog = [
   },
   {
     _id : 'gfsdjnvds2',
-    title: 'Master Sword & Shield',
+    title: 'Hylian Shield',
     price: 25.50,
     img: 'Master-Sword-Shield.png',
     category: 'Collectible'
