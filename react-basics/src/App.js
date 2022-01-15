@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Home from './components/Home';
 import About from './components/About';
 import Cart from './components/Cart';
-import Test from './components/test';
+import GlobalContext from './components/context/globalContext';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
@@ -18,18 +18,19 @@ library.add(fab, faCartPlus)
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
+      <GlobalContext>
+        <BrowserRouter>
+          <Navbar />
 
-        <Routes>
-          <Route path='/' element={<Home />}> </Route>
-          <Route path='/catalog' element={<Catalog />}></Route>
-          <Route path='/about' element={<About />}></Route>
-          <Route path='/cart' element={<Cart />}></Route>
-          <Route path='/test' element={<Test />}></Route>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />}> </Route>
+            <Route path='/catalog' element={<Catalog />}></Route>
+            <Route path='/about' element={<About />}></Route>
+            <Route path='/cart' element={<Cart />}></Route>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </GlobalContext>
     </div>
   );
 }

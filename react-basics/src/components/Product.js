@@ -1,14 +1,26 @@
 import './product.css';
 import QuantityPicker from './quantityPicker';
-import React, {useState}from 'react'
+import React, {useState, useContext}from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import store from './context/store';
 
 export default function Products(props) {
+
+const addProd = useContext(store).addProd
 
 const [total, setTotal] = useState(1)
   
   function quantity(props) {
     setTotal(props)
+  }
+
+  function handleCart() {
+    let prod = {
+      ...props.info,
+      quantity: quantity
+    }
+
+    addProd(prod)
   }
   
   return (
@@ -21,7 +33,7 @@ const [total, setTotal] = useState(1)
         </div>
         <div className='card-add'>
           <QuantityPicker quantity={quantity} ></QuantityPicker>
-          <button>
+          <button onClick={handleCart} className='cart-button'>  
             <FontAwesomeIcon icon="cart-plus" />
           </button>
       </div>

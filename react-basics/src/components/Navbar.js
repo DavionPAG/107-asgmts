@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom'
+import store from './context/store';
 
 export default function Navbar() {
+  const cart = useContext(store).cart
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -14,18 +17,19 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link" to="/catalog">Catalog</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/cart">Cart</Link>
-            </li>
+            
             <li className="nav-item">
               <Link className="nav-link" to="/about">About</Link>
             </li>
 
           </ul>
-          <form className="d-flex">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <div className="d-flex">
+              <Link class="btn btn-primary btn-outline btn-outline-success bg-black form-control me-2" to="/cart">
+                Cart
+                <span className='badge bg-primary'>{
+                cart.length} {console.log(cart)}</span>
+              </Link>              
+          </div>
         </div>
       </div>
     </nav>
