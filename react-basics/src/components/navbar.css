@@ -1,4 +1,10 @@
 body {
-  min-height: 100vh;
+    min-height: 100vh;
+}
+
+.nav-link {
+  color: rgb(76, 76, 211);
+  font-weight: bolder;
+  font-size: x-large;
 }
 
