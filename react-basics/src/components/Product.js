@@ -16,7 +16,7 @@ const [total, setTotal] = useState(1)
 
   function handleCart() {
     let prod = {
-      ...props.info,
+      ...props.product,
       quantity: quantity
     }
 

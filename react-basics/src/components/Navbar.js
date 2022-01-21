@@ -25,10 +25,10 @@ export default function Navbar() {
 
           </ul>
           <div className="d-flex form-inline my-2 my-lg-0">
-            <Link class="btn btn-dark btn-outline btn-outline-primary form-control mr-sm-2" to="/cart">
+            <Link className="btn btn-dark btn-outline btn-outline-primary form-control mr-sm-2" to="/cart">
               <p>Cart </p>
               <span className="badge badge-light">
-                {cart.length} {console.log(cart)}
+                {cart.length}
               </span>
             </Link>
           </div>

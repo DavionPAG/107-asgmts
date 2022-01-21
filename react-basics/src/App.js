@@ -11,6 +11,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
+// import 'react-bootstrap'
+// import 'bootstrap'
+
 
 
 library.add(fab, faCartPlus)

@@ -11,9 +11,11 @@ const GlobalContext = (props) => {
     let newCart = [...cart]
     newCart.push(prod)
     setCart(newCart)
-    
   }
-  const removeProd = () => {}
+  const removeProd = (id) => {
+    let newCart = cart.filter(p => p._id !== id) 
+    setCart(newCart)
+  }
 
   return (
    <store.Provider value={{

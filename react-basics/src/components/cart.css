@@ -1,0 +1,17 @@
+.cart-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.items {
+  flex: 5;
+  margin: 5px;
+}
+
+.side-menu {
+  flex: 2;
+  margin: 5px;
+}
+
