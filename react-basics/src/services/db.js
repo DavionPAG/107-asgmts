@@ -1,3 +1,4 @@
+import axios from 'axios'
 
 let catalog = [
   {
@@ -52,7 +53,8 @@ let catalog = [
 ]
 
 export default class DB {
-  getCatalog() {
-    return catalog
+  async getCatalog() {
+    let res = await axios.get('http://127.0.0.1:5000/api/catalog');
+    return res.data;
   }
 }

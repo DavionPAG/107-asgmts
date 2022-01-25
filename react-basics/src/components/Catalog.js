@@ -7,9 +7,9 @@ export default function Catalog() {
 
   let [products, setProducts] = useState([])
 
-  function loadCatalog() {
+  async function loadCatalog() {
     let db = new DB()
-    setProducts(db.getCatalog())
+    setProducts(await db.getCatalog())
   }
 
   useEffect(() => {
