@@ -1,11 +1,11 @@
 .product {
-  background-color: rgb(191, 211, 238);
   color: blue;
-  border: 1px solid lightblue;
   display: inline-block;
   padding: 5px;
+  border: 1px solid lightblue;
+  background-color: rgb(226, 217, 174);
   border-radius: 5px;
-  box-shadow: 5px 5px 5px rgb(43, 174, 235);
+  box-shadow: 0 10px 10px rgb(152, 170, 185);
   margin: 10px;
 }
 

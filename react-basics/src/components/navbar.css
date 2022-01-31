@@ -2,8 +2,14 @@ body {
     min-height: 100vh;
 }
 
+.navbar {
+  background-color: rgb(226, 217, 174);
+  border-bottom: 2px #808080 solid;
+  border-radius: 0 0 5% 5%;
+  box-shadow: 0 10px 10px rgb(152, 170, 185);
+}
+
 .nav-link {
-  color: rgb(76, 76, 211);
   font-weight: bolder;
   font-size: x-large;
 }

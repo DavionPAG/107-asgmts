@@ -1,0 +1,28 @@
+.about {
+  margin: 5vh;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about label {
+  padding-bottom: 1rem;
+}
+
+.about img {
+  margin: 1.5rem;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  margin: 1.5rem;
+  border: 1px solid rgb(191, 217, 226);
+  box-shadow: 0 0 10px 10px rgb(145, 148, 150);
+}
+
+.card-details label {
+  display: block;
+}
+

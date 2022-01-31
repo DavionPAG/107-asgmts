@@ -10,11 +10,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
-// import 'react-bootstrap'
-// import 'bootstrap'
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-bootstrap'
+import 'bootstrap'
 
 library.add(fab, faCartPlus)
 
@@ -24,12 +22,11 @@ function App() {
       <GlobalContext>
         <BrowserRouter>
           <Navbar />
-
           <Routes>
-            <Route path='/' element={<Home />}> </Route>
-            <Route path='/catalog' element={<Catalog />}></Route>
-            <Route path='/about' element={<About />}></Route>
-            <Route path='/cart' element={<Cart />}></Route>
+            <Route path='/' element={<Home/>}> </Route>
+            <Route path='/catalog' element={<Catalog/>}></Route>
+            <Route path='/about' element={<About/>}></Route>
+            <Route path='/cart' element={<Cart/>}></Route>
           </Routes>
           <Footer />
         </BrowserRouter>

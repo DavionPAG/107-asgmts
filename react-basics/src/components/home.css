@@ -1,10 +1,25 @@
-.home-main {
-  display: flex;
-  justify-content: center;
-  margin-top: 5vh
+.hero-img {
+  margin: 1.5rem;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px rgb(152, 170, 185);
+  text-align: center;
+  object-fit: fill;
 }
 
-.logo {
-  width: 70vw;
-  
+.hero-img img:hover {
+  opacity: 0.8;
+}
+
+.cat-btn{
+  color: rgb(152, 170, 185);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid lightblue;
+  background-color: rgb(226, 217, 174);
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgb(152, 170, 185);
+  padding: 1rem 3rem;
 }

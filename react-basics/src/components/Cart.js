@@ -10,11 +10,9 @@ export default function Cart() {
   const calcTotal = (items) => {
     let finalPrice = 0
     let total = items.map(item => {
-      console.log(typeof(item.price))
-      finalPrice = finalPrice + parseInt(item.price)
-      return finalPrice
+      finalPrice += item.price
     })
-    return total
+    return finalPrice
   }
 
   return (
